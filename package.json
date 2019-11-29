@@ -7,6 +7,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "node-sass": "^4.13.0",
     "owl.carousel": "^2.3.4",
+    "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-number-format": "^4.3.1",
