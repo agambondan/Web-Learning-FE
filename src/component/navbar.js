@@ -1,51 +1,66 @@
 import * as React from "react";
-import header from '../style/img/logo.png';
 import {Link} from "react-router-dom";
+import logo from "../style/img/core-img/logo.png";
 
 class Navbar extends React.Component {
     render() {
         return (
-            <header className="header_area">
-                <div className="main_menu">
-                    <nav className="navbar navbar-expand-lg navbar-light">
-                        <div className="container box_1620">
-                            <Link className="navbar-brand logo_h" to="">
-                                <img src={header} alt=""/>
-                            </Link>
-                            <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="icon-bar"/>
-                                <span className="icon-bar"/>
-                                <span className="icon-bar"/>
-                            </button>
-                            <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-                                <ul className="nav navbar-nav menu_nav justify-content-center">
-                                    <li className="nav-item active">
-                                        <Link to="" className="nav-link">Home</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="" className="nav-link">Archive</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="" className="nav-link">Category</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="" className="nav-link">Pages</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="" className="nav-link">Contact</Link>
-                                    </li>
-                                </ul>
+            <header className="header-area">
+                <div className="top-header-area d-flex justify-content-between align-items-center">
+                    <div className="contact-info">
+                        <Link to="#"><span>Phone:</span> +44 300 303 0266</Link>
+                        <Link to="#"><span>Email:</span> info@clever.com</Link>
+                    </div>
+                    <div className="follow-us">
+                        <span>Follow us</span>
+                        <Link to="#"><i className="fa fa-facebook" aria-hidden="true"/></Link>
+                        <Link to="#"><i className="fa fa-instagram" aria-hidden="true"/></Link>
+                        <Link to="#"><i className="fa fa-twitter" aria-hidden="true"/></Link>
+                    </div>
+                </div>
+
+                <div className="clever-main-menu">
+                    <div className="classy-nav-container breakpoint-off">
+                        <nav className="classy-navbar justify-content-between" id="cleverNav">
+                            <Link className="nav-brand" to="index.html">
+                                <img src={logo} alt=""/></Link>
+
+                            <div className="classy-navbar-toggler">
+                                <span className="navbarToggler"><span/><span/><span/></span>
                             </div>
-                            <ul className="nav navbar-nav navbar-right navbar-social">
-                                <li><Link to=""><i className="fab fa-facebook-f"/></Link></li>
-                                <li><Link to=""><i className="fab fa-twitter"/></Link></li>
-                                <li><Link to=""><i className="fab fa-instagram"/></Link></li>
-                                <li><Link to=""><i className="fab fa-skype"/></Link></li>
-                            </ul>
-                        </div>
-                    </nav>
+
+                            <div className="classy-menu">
+
+                                <div className="classycloseIcon">
+                                    <div className="cross-wrap"><span className="top"/><span
+                                        className="bottom"/></div>
+                                </div>
+
+                                <div className="classynav">
+                                    <ul>
+                                        <li><Link to="index.html">Home</Link></li>
+                                        <li><Link to="courses.html">Courses</Link></li>
+                                        <li><Link to="instructors.html">Instructors</Link></li>
+                                        <li><Link to="blog.html">Blog</Link></li>
+                                        <li><Link to="contact.html">Contact</Link></li>
+                                    </ul>
+
+                                    <div className="search-area">
+                                        <form action="#" method="post">
+                                            <input type="search" name="search" id="search" placeholder="Search"/>
+                                            <button type="submit"><i className="fa fa-search" aria-hidden="true"/>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <div className="register-login-area">
+                                        <Link to="#" className="btn">Register</Link>
+                                        <Link to="index-login.html" className="btn active">Login</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </header>
         )

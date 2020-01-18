@@ -5,6 +5,7 @@
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "owl.carousel": "^2.3.4",
     "react": "^16.11.0",
