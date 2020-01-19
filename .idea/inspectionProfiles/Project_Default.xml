@@ -12,12 +12,12 @@
             <item index="3" class="java.lang.String" itemvalue="noscript" />
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
-            <item index="6" class="java.lang.String" itemvalue="link" />
-            <item index="7" class="java.lang.String" itemvalue="meta" />
-            <item index="8" class="java.lang.String" itemvalue="html" />
-            <item index="9" class="java.lang.String" itemvalue="head" />
-            <item index="10" class="java.lang.String" itemvalue="body" />
-            <item index="11" class="java.lang.String" itemvalue="div" />
+            <item index="6" class="java.lang.String" itemvalue="html" />
+            <item index="7" class="java.lang.String" itemvalue="head" />
+            <item index="8" class="java.lang.String" itemvalue="meta" />
+            <item index="9" class="java.lang.String" itemvalue="link" />
+            <item index="10" class="java.lang.String" itemvalue="div" />
+            <item index="11" class="java.lang.String" itemvalue="body" />
           </list>
         </value>
       </option>
